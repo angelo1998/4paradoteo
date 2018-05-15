@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ΒΕΚΡΑΚΗΣ ΕΙΣΑΓΩΓΙΚΗ Α.Ε.</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-default">
+          <div class = "container-fluid">
+
+            <!--Logo -->
+            <div class= "navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              <a href="index.html" class="navbar-left"><img src = "img/logo1.png"></a>
+            </div>
+
+            <!-- Menu Items -->
+               <div class="collapse navbar-collapse" id="mainNavBar">
+                     <ul class="nav navbar-nav">
+                         <li><a href="index.html" >Αρχική</a></li>
+                         <!-- dropdown menu-->
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Επικοινωνία <span class="caret"></span></a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="#">Σχετικά με εμάς</a></li>
+                                 <li><a href="#">E-mail</a></li>
+                                 <li><a href="#">Τηλέφωνο</a></li>
+                             </ul>
+                         </li>
+                         <li><a href="#">Χονδρική</a></li>
+                         <li><a href="#">Λιανική</a></li>
+                         <li><a href="#">E-shop</a></li>
+                         <li><a href="#">Logistics</a></li>
+                         <li><a href="#">Έξοδος</a></li>
+                     </ul>
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><input type="text" placeholder="Αναζήτηση..."></a></li>
+                     </ul>
+               </div>
+          </div>
+      </nav>
+      <h2 style="color : white;font-size:40px;font-family: Georgia, serif;" >ΠΑΡΑΓΓΕΛΙΕΣ</h2>
+      <h2 style="color: white; font-size:25px;font-family: Georgia, serif;">Μέσω εφαρμογής</h2>
+
+      <!-- validation form  for orders -->
+      <div class="container">
+
+        <form>
+            <div class="row">
+                  <div class="col-md-4 mb-3" style="background-color: #d1e0e0">
+                      <label for="validationDefault01">Όνομα</label>
+                      <input type="text" class="form-control" id="validationDefault01" placeholder="Όνομα" required>
+                  </div>
+                  <div class="col-md-4 mb-3" style="background-color: #d1e0e0">
+                      <label for="validationDefault02">Επίθετο</label>
+                      <input type="text" class="form-control" id="validationDefault02" placeholder="Επίθετο"required>
+                  </div>
+                  <div class="col-md-4 mb-3"style="background-color: #d1e0e0">
+                      <label for="validationDefault02">Επωνυμία Επιχείρησης</label>
+                      <input type="text" class="form-control" id="validationDefault02" placeholder="Επωνυμία Επιχείρησης"required>
+                  </div>
+            </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3"style="background-color: #d1e0e0">
+                        <label for="validationDefault03">City</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                    </div>
+                    <div class="col-md-3 mb-3"style="background-color: #d1e0e0">
+                        <label for="validationDefault04">State</label>
+                        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                    </div>
+                    <div class="col-md-3 mb-3"style="background-color: #d1e0e0">
+                        <label for="validationDefault05">Zip</label>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                    </div>
+                  <br>
+                  <br>
+              </div>
+          </form>
+          <br>
+          <br>
+          <div class ="row">
+              <div class="col-md-12" style="background-color: #d1e0e0" >
+                  <h3>Στοιχεία Πελάτη</h3>
+                    <form action="" method="">
+                        <div class="form-group">
+                            <label for = ""> Όνομα πελάτη</label>
+                            <input type="text" class= "form-control" id ="Όνομα πελάτη"/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> ΑΦΜ</label>
+                            <input type="text" class= "form-control" id ="ΑΦΜ"/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> Επωνυμία επιχείρησης</label>
+                            <input type="text" class= "form-control" id ="Επωνυμία επιχείρησης"/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> </label>
+                            <input type="value" class= "form-control" id =""/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> Ποσότητα</label>
+                            <input type="number" class= "form-control" id ="Ποσότητα"/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> Περιγραφή</label>
+                            <input type="text" class= "form-control" id ="Περιγραφή"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="submit" class= "btn btn-default" value = "Εγγραφή"/>
+                        </div>
+                        <br>
+                        <p><b>OR</b> select file from <strong>excel</strong></p>
+                        <br>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+
+                        </div>
+                        <br>
+                        <br>
+                    </form>
+              </div>
+
+
+
+
+
+  </body>
+</html>

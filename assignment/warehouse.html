@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ΒΕΚΡΑΚΗΣ ΕΙΣΑΓΩΓΙΚΗ Α.Ε.</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-default">
+          <div class = "container-fluid">
+
+            <!--Logo -->
+            <div class= "navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a href="index.html" class="navbar-left"><img src = "img/logo1.png"></a>
+            </div>
+
+            <!-- Menu Items -->
+               <div class="collapse navbar-collapse" id="mainNavBar">
+                     <ul class="nav navbar-nav">
+                         <li><a href="index.html">Αρχική</a></li>
+
+                         <!-- dropdown menu-->
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Επικοινωνία <span class="caret"></span></a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="#">Σχετικά με εμάς</a></li>
+                                 <li><a href="#">E-mail</a></li>
+                                 <li><a href="#">Τηλέφωνο</a></li>
+                             </ul>
+                         </li>
+                         <li><a href="#">Προϊόντα</a></li>
+                         <li><a href="#">Picking List</a></li>
+                         <li><a href="#">PDA</a></li>
+                         <li><a href="#">Έξοδος</a></li>
+                     </ul>
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><input type="text" placeholder="Αναζήτηση..."></a></li>
+                     </ul>
+               </div>
+          </div>
+      </nav>
+
+      <!-- heading -->
+      <h2 style="color : white;font-size:40px;font-family: Georgia, serif;">ΑΠΟΘΗΚΗ</h2>
+      <div class="container">
+          <div class ="row">
+              <div class="col-md-4" style="background-color: #d1e0e0" >
+                  <h3>Διαδικασία εγγραφής προϊόντος</h3>
+                    <form action="" method="">
+                        <div class="form-group">
+                            <label for = ""> Κωδικός</label>
+                            <input type="text" class= "form-control" id ="Κωδικός"/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> Όνομα</label>
+                            <input type="name" class= "form-control" id ="Όνομα"/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> Προμηθευτής</label>
+                            <input type="text" class= "form-control" id ="Προμηθευτής"/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> Αξία</label>
+                            <input type="value" class= "form-control" id ="Αξία"/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> Ποσότητα</label>
+                            <input type="number" class= "form-control" id ="Ποσότητα"/>
+                        </div>
+                        <div class="form-group">
+                            <label for = ""> Περιγραφή</label>
+                            <input type="text" class= "form-control" id ="Περιγραφή"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="submit" class= "btn btn-default" value = "Εγγραφή"/>
+                        </div>
+                        <br>
+                        <p><b>OR</b> select file from <strong>excel</strong></p>
+                        <br>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <br>
+                        <br>
+                    </form>
+              </div>
+              <div class="col-md-8" style="background-color: white">
+                  <h3>Κατάσταση Αποθήκης - Κατάλογος Προϊόντων</h3>
+                  <div class="container-fluid">
+                      <table class="table table-bordered table-striped table-hover">
+                          <thead>
+                              <tr>
+                                  <th>Κωδικός</th>
+                                  <th>Όνομα</th>
+                                  <th>Προμηθευτής</th>
+                                  <th>Ποσότητα</th>
+                                  <th>Αξία</th>
+                                  <th>Περιγραφή</th>
+                              </tr>
+                          </thead>
+                        <tbody>
+                              <tr>
+                                  <td>56258</td>
+                                  <td>Κούπα</td>
+                                  <td>Βεκράκης</td>
+                                  <td>150</td>
+                                  <td>2&euro;</td>
+                                  <td>Κούπα τουριστική μπλε</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>86925</td>
+                                  <td>Μπρελόκ</td>
+                                  <td>Οδυσσέας</td>
+                                  <td>200</td>
+                                  <td>1.20&euro;</td>
+                                  <td>Μπρελόκ στρογγυλό μάτι</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>95689</td>
+                                  <td>Σουβέρ</td>
+                                  <td>Χατζηαντωνίου</td>
+                                  <td>500</td>
+                                  <td>0.99&euro;</td>
+                                  <td>Σουβέρ "i love greece"</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>98657</td>
+                                  <td>Καπέλο</td>
+                                  <td>Βεκράκης</td>
+                                  <td>200</td>
+                                  <td>3&euro;</td>
+                                  <td>Καπέλο ψάθινο</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>56258</td>
+                                  <td>Κούπα</td>
+                                  <td>Βεκράκης</td>
+                                  <td>150</td>
+                                  <td>2&euro;</td>
+                                  <td>Κούπα τουριστική μπλε</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>86925</td>
+                                  <td>Μπρελόκ</td>
+                                  <td>Οδυσσέας</td>
+                                  <td>200</td>
+                                  <td>1.20&euro;</td>
+                                  <td>Μπρελόκ στρογγυλό μάτι</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>95689</td>
+                                  <td>Σουβέρ</td>
+                                  <td>Χατζηαντωνίου</td>
+                                  <td>500</td>
+                                  <td>0.99&euro;</td>
+                                  <td>Σουβέρ "i love greece"</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>98657</td>
+                                  <td>Καπέλο</td>
+                                  <td>Βεκράκης</td>
+                                  <td>200</td>
+                                  <td>3&euro;</td>
+                                  <td>Καπέλο ψάθινο</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>56258</td>
+                                  <td>Κούπα</td>
+                                  <td>Βεκράκης</td>
+                                  <td>150</td>
+                                  <td>2&euro;</td>
+                                  <td>Κούπα τουριστική μπλε</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>86925</td>
+                                  <td>Μπρελόκ</td>
+                                  <td>Οδυσσέας</td>
+                                  <td>200</td>
+                                  <td>1.20&euro;</td>
+                                  <td>Μπρελόκ στρογγυλό μάτι</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>95689</td>
+                                  <td>Σουβέρ</td>
+                                  <td>Χατζηαντωνίου</td>
+                                  <td>500</td>
+                                  <td>0.99&euro;</td>
+                                  <td>Σουβέρ "i love greece"</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>98657</td>
+                                  <td>Καπέλο</td>
+                                  <td>Βεκράκης</td>
+                                  <td>200</td>
+                                  <td>3&euro;</td>
+                                  <td>Καπέλο ψάθινο</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>56258</td>
+                                  <td>Κούπα</td>
+                                  <td>Βεκράκης</td>
+                                  <td>150</td>
+                                  <td>2&euro;</td>
+                                  <td>Κούπα τουριστική μπλε</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>86925</td>
+                                  <td>Μπρελόκ</td>
+                                  <td>Οδυσσέας</td>
+                                  <td>200</td>
+                                  <td>1.20&euro;</td>
+                                  <td>Μπρελόκ στρογγυλό μάτι</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>95689</td>
+                                  <td>Σουβέρ</td>
+                                  <td>Χατζηαντωνίου</td>
+                                  <td>500</td>
+                                  <td>0.99&euro;</td>
+                                  <td>Σουβέρ "i love greece"</td>
+                              </tr>
+                        </tbody>
+                        <tbody>
+                              <tr>
+                                  <td>98657</td>
+                                  <td>Καπέλο</td>
+                                  <td>Βεκράκης</td>
+                                  <td>200</td>
+                                  <td>3&euro;</td>
+                                  <td>Καπέλο ψάθινο</td>
+                              </tr>
+                        </tbody>
+                      </table>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
