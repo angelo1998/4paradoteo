@@ -53,9 +53,9 @@
 
       <!-- validation form  for orders -->
       <div class="container">
-
         <form>
-            <div class="row">
+            <div class="row" style="background-color: #d1e0e0">
+                <h3>Στοιχεία Πελάτη</h3>
                   <div class="col-md-4 mb-3" style="background-color: #d1e0e0">
                       <label for="validationDefault01">Όνομα</label>
                       <input type="text" class="form-control" id="validationDefault01" placeholder="Όνομα" required>
@@ -69,56 +69,55 @@
                       <input type="text" class="form-control" id="validationDefault02" placeholder="Επωνυμία Επιχείρησης"required>
                   </div>
             </div>
-                <div class="row">
+            <div class="row">
                     <div class="col-md-6 mb-3"style="background-color: #d1e0e0">
-                        <label for="validationDefault03">City</label>
-                        <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                        <label for="validationDefault03">Διέύθυνση Επιχείρησης</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="Διέύθυνση Επιχείρησης" required>
+                        <br>
                     </div>
                     <div class="col-md-3 mb-3"style="background-color: #d1e0e0">
-                        <label for="validationDefault04">State</label>
-                        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                        <label for="validationDefault04">Πόλη</label>
+                        <input type="text" class="form-control" id="validationDefault04" placeholder="Πόλη" required>
+                        <br>
                     </div>
                     <div class="col-md-3 mb-3"style="background-color: #d1e0e0">
-                        <label for="validationDefault05">Zip</label>
-                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                        <label for="validationDefault05">T.K.</label>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="Ταχυδρομικός Κώδικας" required>
+                        <br>
                     </div>
-                  <br>
-                  <br>
+              </div>
+              <div class="row">
+                <div class="col-md-12" style="background-color: #d1e0e0">
+                  <button class="btn btn-primary" type="submit">Καταχώρηση</button>
+                </div>
               </div>
           </form>
           <br>
           <br>
+          <br>
+          <br>
           <div class ="row">
               <div class="col-md-12" style="background-color: #d1e0e0" >
-                  <h3>Στοιχεία Πελάτη</h3>
+                <h3>Στοιχεία Προϊόντος</h3>
                     <form action="" method="">
                         <div class="form-group">
-                            <label for = ""> Όνομα πελάτη</label>
+                            <label for = "">Κωδικός</label>
                             <input type="text" class= "form-control" id ="Όνομα πελάτη"/>
                         </div>
                         <div class="form-group">
-                            <label for = ""> ΑΦΜ</label>
+                            <label for = "">Ποσότητα</label>
                             <input type="text" class= "form-control" id ="ΑΦΜ"/>
                         </div>
                         <div class="form-group">
-                            <label for = ""> Επωνυμία επιχείρησης</label>
+                            <label for = "">Έκπτωση</label>
                             <input type="text" class= "form-control" id ="Επωνυμία επιχείρησης"/>
                         </div>
                         <div class="form-group">
-                            <label for = ""> </label>
-                            <input type="value" class= "form-control" id =""/>
-                        </div>
-                        <div class="form-group">
-                            <label for = ""> Ποσότητα</label>
-                            <input type="number" class= "form-control" id ="Ποσότητα"/>
-                        </div>
-                        <div class="form-group">
-                            <label for = ""> Περιγραφή</label>
+                            <label for = ""> Περιγραφή(Προαιρετική)</label>
                             <input type="text" class= "form-control" id ="Περιγραφή"/>
                         </div>
-                        <div class="form-group">
-                            <input type="submit" id="submit" class= "btn btn-default" value = "Εγγραφή"/>
-                        </div>
+                        <button class="btn btn-primary" type="submit">Καταχώρηση</button>
+                        <br>
                         <br>
                         <p><b>OR</b> select file from <strong>excel</strong></p>
                         <br>
