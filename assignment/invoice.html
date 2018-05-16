@@ -35,9 +35,8 @@
                                  <li><a href="#">Τηλέφωνο</a></li>
                              </ul>
                          </li>
-                         <li><a href="#">Πελάτες Logistics</a></li>
-                         <li><a href="#">Πελάτες Χονδρικής</a></li>
-                         <li><a href="#">ERP Πελατών</a></li>
+                         <li><a href="#">Εργαλεία</a></li>
+                         <li><a href="#">Οδηγίες</a></li>
                          <li><a href="#">Έξοδος</a></li>
                      </ul>
                      <ul class="nav navbar-nav navbar-right">
@@ -48,24 +47,146 @@
       </nav>
       <h2 style="color : white;font-size:40px;font-family: Georgia, serif;" >ΤΙΜΟΛΟΓΙΑ</h2>
       <div class="container">
-          <div class ="row">
-              <div class="col-md-12" style="background-color: #d1e0e0" >
+          <div class ="row" style="background-color: #d1e0e0" >
+              <div class="col-md-12" >
                   <h3>Έκδοση Τιμολογίου</h3>
                   <p>Επιθυμείτε <b>έκδοση</b> τιμολογίου;</p>
                   <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">Ναι</label>
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Ναι</label>
                   </div>
                   <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                      <label class="form-check-label" for="inlineCheckbox2">Οχι</label>
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Οχι</label>
                   </div>
-
-
-
+              <div class="form-group">
+                <br>
+                  <label for ="">Επιλέξτε Πελάτη</label>
+                  <select class="form-control">
+                    <option>Άγγελος Λαγουνάρης</option>
+                    <option>Γιάννης Ρεβύθης</option>
+                    <option>Γιάννης Κεφαλάς</option>
+                    <option>Διονύσης Παπαδόπουλος</option>
+                    <option>Σπύρος Χατζηαντωνίου</option>
+                  </select>
               </div>
-          </div>
+              <br>
+            </div>
+            <div class="col-md-12">
+                <label for="validationDefault03">Ημερομηνία</label>
+                <input type="date">
+                <br>
+                <br>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationDefault04">Αριθμός Παραστατικού</label>
+                <input type="text" class="form-control" id="validationDefault04" placeholder="e.g. 548620" required>
+                <br>
+                <button class="btn btn-primary" type="submit">Εκτύπωση</button>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationDefault05">ΑΦΜ</label>
+                <input type="text" class="form-control" id="validationDefault05" placeholder="ΑΦΜ" required>
+                <br>
+            </div>
+            <div class="col-md-12 mb-3" >
+              <h3>Προεπισκόπηση Τιμολογίου</h3>
+              <div class="container-fluid">
+                  <p style="font-family: Georgia, serif;">ΠΕΛΑΤΗΣ : ΚΥΡΙΑΝΝΑΚΗΣ ΜΙΧΑΛΗΣ Τηλ: 6985486596</p>
+                  <p style="font-family: Georgia, serif;">ΠΕΡΙΟΧΗ : ΡΕΘΥΜΝΟ</p>
+                  <table class="table table-bordered table-striped table-hover">
+                      <thead>
+                          <tr>
+                              <th>Κωδικός Είδους</th>
+                              <th>Όνομα</th>
+                              <th>Ποσότητα</th>
+                              <th>Αξία</th>
+                              <th>Περιγραφή</th>
+                          </tr>
+                      </thead>
+                    <tbody>
+                          <tr>
+                              <td>56258</td>
+                              <td>Κούπα</td>
+                              <td>150</td>
+                              <td>2&euro;</td>
+                              <td>Κούπα τουριστική μπλε</td>
+                          </tr>
+                          <tr>
+                              <td>86925</td>
+                              <td>Μπρελόκ</td>
+                              <td>200</td>
+                              <td>1.20&euro;</td>
+                              <td>Μπρελόκ στρογγυλό μάτι</td>
+                          </tr>
+                          <tr>
+                              <td>95689</td>
+                              <td>Σουβέρ</td>
+                              <td>500</td>
+                              <td>0.99&euro;</td>
+                              <td>Σουβέρ "i love greece"</td>
+                          </tr>
+                          <tr>
+                              <td>98657</td>
+                              <td>Καπέλο</td>
+                              <td>200</td>
+                              <td>3&euro;</td>
+                              <td>Καπέλο ψάθινο</td>
+                          </tr>
+                          <tr>
+                              <td>56258</td>
+                              <td>Κούπα</td>
+                              <td>150</td>
+                              <td>2&euro;</td>
+                              <td>Κούπα τουριστική μπλε</td>
+                          </tr>
+                          <tr>
+                              <td>86925</td>
+                              <td>Μπρελόκ</td>
+                              <td>200</td>
+                              <td>1.20&euro;</td>
+                              <td>Μπρελόκ στρογγυλό μάτι</td>
+                          </tr>
+                          <tr>
+                              <td>95689</td>
+                              <td>Σουβέρ</td>
+                              <td>500</td>
+                              <td>0.99&euro;</td>
+                              <td>Σουβέρ "i love greece"</td>
+                          </tr>
+                          <tr>
+                              <td>98657</td>
+                              <td>Καπέλο</td>
+                              <td>200</td>
+                              <td>3&euro;</td>
+                              <td>Καπέλο ψάθινο</td>
+                          </tr>
+                          <tr>
+                              <td>56258</td>
+                              <td>Κούπα</td>
+                              <td>150</td>
+                              <td>2&euro;</td>
+                              <td>Κούπα τουριστική μπλε</td>
+                          </tr>
+                          <tr>
+                              <td>86925</td>
+                              <td>Μπρελόκ</td>
+                              <td>200</td>
+                              <td>1.20&euro;</td>
+                              <td>Μπρελόκ στρογγυλό μάτι</td>
+                          </tr>
+                          <tr>
+                              <td>95689</td>
+                              <td>Σουβέρ</td>
+                              <td>500</td>
+                              <td>0.99&euro;</td>
+                              <td>Σουβέρ "i love greece"</td>
+                          </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </div>
       </div>
-
     </body>
   </html>
